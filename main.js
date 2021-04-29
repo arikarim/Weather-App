@@ -36,12 +36,16 @@ function displayData(data)  {
   contentDiv.appendChild(condition)
 
   if (data.condition.includes('Clear') || data.condition.includes('Sunny')) {
+    body.removeAttribute("class");
     body.classList.add('sunny')
   } else if (data.condition.includes('rain')) {
+    body.removeAttribute("class");
     body.classList.add('rainy')
   } else if ( data.condition.includes('snow')) {
+    body.removeAttribute("class");
     body.classList.add('snowy')
   } else if ( data.condition.includes('cloudy')) {
+    body.removeAttribute("class");
     body.classList.add('cloudy')
   }
 
