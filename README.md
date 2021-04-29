@@ -1,12 +1,12 @@
 # Weather-App
 
-A Weather built with JavaScript, Users can see the weather just by typing the city name.
+A Weather built with JavaScript, users can see the weather just by typing the city name.
 ![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/Mobile--responsive-yes-green) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 
 
 ## Screenshots of the app.
 
-![image](./src/img/screen.png)
+![image](./img/screenw.png)
 
 
 [Live Demo Link](https://arikarim.github.io/Todo-List/?)
@@ -27,19 +27,17 @@ To get this project up and running locally, you must follow the steps from the [
 
 **Step 1**<br>
 Navigate through the local folder where you want to clone the repository and run<br>
-git clone `https://github.com/arikarim/Todo-List/tree/main`. It will clone the repo to your local folder.<br>
+git clone `https://github.com/arikarim/Weather-App/tree/main`. It will clone the repo to your local folder.<br>
 
 **Step 2**<br>
 - Cd inside the project
 
-- run npm run build
-
-- Open the index.html in the browser.
+- open index.html in your browser.
 
 
 ## 🤝 contributing
 
-contributions, issues, and feature requests are welcome!<br/>feel free to check [issues page](https://github.com/arikarim/Todo-List/issues).
+contributions, issues, and feature requests are welcome!<br/>feel free to check [issues page](https://github.com/arikarim/Weather-App/issues).
 
 ## Author
 
