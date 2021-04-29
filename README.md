@@ -4,6 +4,7 @@ A Weather built with JavaScript, users can see the weather just by typing the ci
 ![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/Mobile--responsive-yes-green) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 
 
+
 ## Screenshots of the app.
 
 ![image](./img/screenw.png)
