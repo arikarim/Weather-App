@@ -35,9 +35,16 @@ function displayData(data)  {
   condition.textContent = data.condition
   contentDiv.appendChild(condition)
 
-  if (data.condition === 'Clear' || data.condition === 'Sunny' ) {
+  if (data.condition.includes('Clear') || data.condition.includes('Sunny')) {
     body.classList.add('sunny')
+  } else if (data.condition.includes('rain')) {
+    body.classList.add('rainy')
+  } else if ( data.condition.includes('snow')) {
+    body.classList.add('snowy')
+  } else if ( data.condition.includes('cloudy')) {
+    body.classList.add('cloudy')
   }
+
   // name of city
   const newH = document.createElement('h1')
   newH.classList.add('text-light')
