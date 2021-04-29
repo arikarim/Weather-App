@@ -5,3 +5,16 @@ body {
   min-height: 100vh;
   background-position: center;
 }
+#input {
+  opacity: 0.4;
+  border-radius: 25px;
+}
+
+form > label {
+  font-weight: 800;
+}
+
+#submit {
+  opacity: 0.4;
+  border-radius: 25px;
+}
