@@ -1,0 +1,7 @@
+body {
+  background-image: url(./img/weather.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+}
