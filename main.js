@@ -2,6 +2,7 @@ const form = document.getElementById('form')
 const input = document.getElementById('input')
 const submit = document.getElementById('submit')
 const contentDiv = document.getElementById('content')
+const body = document.getElementById('body')
 
     submit.addEventListener('click', e => {
       e.preventDefault();
@@ -33,6 +34,10 @@ function displayData(data)  {
   condition.classList.add('text-light')
   condition.textContent = data.condition
   contentDiv.appendChild(condition)
+
+  if (data.condition === 'Clear' || data.condition === 'Sunny' ) {
+    body.classList.add('sunny')
+  }
   // name of city
   const newH = document.createElement('h1')
   newH.classList.add('text-light')

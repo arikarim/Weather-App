@@ -1,8 +1,35 @@
 
 
-body {
+.rainy {
   line-height: normal;
   background-image: url(./img/weather.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+}
+
+.snowy {
+  line-height: normal;
+  background-image: url(./img/snowy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+}
+
+.sunny {
+  line-height: normal;
+  background-image: url(./img/sunny.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+}
+
+.cloudy {
+  line-height: normal;
+  background-image: url(./img/cloudy.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -35,5 +62,6 @@ form > label {
 }
 
 .div2 {
-  margin-top: 50px;
+  margin-top: 69px;
+  margin-left: 50px;
 }
