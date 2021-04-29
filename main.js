@@ -28,16 +28,40 @@ async function getData(location) {
 
 function displayData(data)  {
   deleteEl(contentDiv)
-
+  // condition of weather
   const condition = document.createElement('h4')
   condition.classList.add('text-light')
   condition.textContent = data.condition
   contentDiv.appendChild(condition)
-
+  // name of city
   const newH = document.createElement('h1')
   newH.classList.add('text-light')
   newH.textContent = data.location
   contentDiv.appendChild(newH)
+
+  // Tempreature
+  const div = document.createElement('div')
+  div.classList.add('d-flex')
+  div.classList.add('temp-div')
+
+  const temp = document.createElement('span')
+  temp.classList.add('text-light')
+  temp.classList.add('temp-number')
+  temp.textContent = data.currentTemp.c
+
+  div.appendChild(temp)
+
+  const div2 = document.createElement('div')
+  div2.classList.add('div2')
+
+  div2.innerHTML = `
+  <p class="my-3 text-light">FEELS LIKE: ${data.feelsLike.c}</p>
+  <p class="my-3 text-light">WIND: ${data.wind} MPH</p>
+  <p class="my-3 text-light">HMIDITY: ${data.humidity}%</p>`;
+
+
+div.appendChild(div2)
+  contentDiv.appendChild(div)
 
 
 }

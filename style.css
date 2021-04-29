@@ -1,4 +1,7 @@
+
+
 body {
+  line-height: normal;
   background-image: url(./img/weather.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,4 +20,20 @@ form > label {
 #submit {
   opacity: 0.4;
   border-radius: 25px;
+}
+
+.temp-div {
+
+  position: absolute;
+  top: 150px;
+}
+
+.temp-number {
+  font-size: 15rem;
+  font-weight: 900;
+  font-family: 'Nunito', sans-serif;
+}
+
+.div2 {
+  margin-top: 50px;
 }
