@@ -1,0 +1,34 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A Weather built with JavaScript, users can see the weather just by typing the city name. ![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/Mobile--responsive-yes-green) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arikarim/Weather-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arikarim/Weather-App/issues"
+  },
+  "homepage": "https://github.com/arikarim/Weather-App#readme",
+  "devDependencies": {
+    "css-loader": "^5.2.4",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.36.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

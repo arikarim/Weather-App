@@ -2,14 +2,14 @@
 
 .rainy {
   line-height: normal;
-  background-image: url(./img/rainy.jpg);
+  /* background-image: url(./img/rainy.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
   background-position: center;
 }
 
-.snowy {
+/* .snowy {
   line-height: normal;
   background-image: url(./img/snowy.jpg);
   background-size: cover;
@@ -34,7 +34,7 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   background-position: center;
-}
+} */
 #input {
   opacity: 0.4;
   border-radius: 25px;
