@@ -10,7 +10,7 @@ A Weather built with JavaScript, users can see the weather just by typing the ci
 ![image](./src/img/screenw.png)
 
 
-[Live Demo Link](https://arikarim.github.io/Todo-List/?)
+[Live Demo Link](https://arikarim.github.io/Weather-App/)
 
 ## Built With
 
