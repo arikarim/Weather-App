@@ -53,28 +53,32 @@ function displayData(data) {
   div2.classList.add('div2');
 
   div2.innerHTML = `
-  <div class='d-flex'>
+  <div class='d-flex' id='parentt'>
     <p id='feels-like' class="my-3 text-light">FEELS LIKE: ${data.feelsLike.c} C</p>
     <button id='change-temp' class="my-3 change-temp">Change</button>
   </div>
   <p class="my-3 text-light">WIND: ${data.wind} MPH</p>
   <p class="my-3 text-light">HMIDITY: ${data.humidity}%</p>
   `;
-  
+
   div.appendChild(div2);
   contentDiv.appendChild(div);
-    const feelsLike = document.getElementById('feels-like')
-    const change = document.getElementById('change-temp')
-    change.addEventListener('click', e => {
-      e.preventDefault();
-      if (temp.textContent == data.currentTemp.c) {
-        temp.textContent = data.currentTemp.f
-        feelsLike.innerHTML = `FEELS LIKE: ${data.feelsLike.f} F`
-      } else {
-        feelsLike.innerHTML = `FEELS LIKE: ${data.feelsLike.c} C`
-        temp.textContent = data.currentTemp.c
-      }
-    })
+  const feelsLikeParent = document.getElementById('parentt');
+  const change = document.getElementById('change-temp');
+  const textnode = document.createElement('h6');
+  textnode.innerHTML = `<h6 id='feels-like' class="my-3 text-light">FEELS LIKE: ${data.feelsLike.f} F</h6>`;
+  const textnode1 = document.createElement('p');
+  textnode1.innerHTML = `<p id='feels-like' class="my-3 text-light">FEELS LIKE: ${data.feelsLike.c} C</p>`;
+  change.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (feelsLikeParent.children[0].tagName.toLowerCase() === 'p') {
+      temp.textContent = data.currentTemp.f;
+      feelsLikeParent.replaceChild(textnode, feelsLikeParent.children[0]);
+    } else {
+      feelsLikeParent.replaceChild(textnode1, feelsLikeParent.children[0]);
+      temp.textContent = data.currentTemp.c;
+    }
+  });
 }
 
 async function getData(location) {
