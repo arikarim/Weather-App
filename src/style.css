@@ -1,0 +1,46 @@
+
+.rainy {
+  line-height: normal;
+  overflow-x: hidden;
+
+  /* background-image: url(./img/rainy.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+}
+
+#input {
+  opacity: 0.4;
+  border-radius: 25px;
+}
+
+form > label {
+  font-weight: 800;
+}
+
+#submit {
+  opacity: 0.4;
+  border-radius: 25px;
+}
+
+.temp-div {
+  position: absolute;
+  top: 150px;
+}
+
+.temp-number {
+  font-size: 15rem;
+  font-weight: 900;
+  font-family: 'Nunito', sans-serif;
+}
+
+.div2 {
+  margin-top: 69px;
+  margin-left: 50px;
+}
+
+.change-temp {
+  opacity: 0.4;
+  border-radius: 25px;
+}
