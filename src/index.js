@@ -58,7 +58,8 @@ function displayData(data) {
   div2.classList.add('div2');
 
   div2.innerHTML = `
-  <p class="my-3 text-light">FEELS LIKE: ${data.feelsLike.c}</p>
+  <p class="my-3 text-light">FEELS LIKE: ${data.feelsLike.c} C</p>
+  <p class="my-3 text-light">FEELS LIKE: ${data.feelsLike.f} F</p>
   <p class="my-3 text-light">WIND: ${data.wind} MPH</p>
   <p class="my-3 text-light">HMIDITY: ${data.humidity}%</p>`;
 
