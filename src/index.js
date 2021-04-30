@@ -1,12 +1,18 @@
 import _ from 'lodash';
 import './style.css';
 import Rainy from './img/rainy.jpg';
+import Snowy from './img/snowy.jpg';
+import Cloudy from './img/cloudy.jpg';
+import Sunny from './img/sunny.jpg';
 
 const form = document.getElementById('form')
 const input = document.getElementById('input')
 const submit = document.getElementById('submit')
 const contentDiv = document.getElementById('content')
 const body = document.getElementById('body')
+  const image = new Image()
+  image.src = Rainy
+  body.style.backgroundImage = `url(${Rainy})`
 
     submit.addEventListener('click', e => {
       e.preventDefault();
@@ -39,18 +45,18 @@ function displayData(data)  {
   condition.textContent = data.condition
   contentDiv.appendChild(condition)
 
+  // const image = new Image()
+  // image.src = Rainy
+  // body.appendChild(image)
+
   if (data.condition.includes('Clear') || data.condition.includes('Sunny')) {
-    body.removeAttribute("class");
-    body.classList.add('sunny')
+    body.style.backgroundImage = `url(${Sunny})`
   } else if (data.condition.includes('rain')) {
-    body.removeAttribute("class");
-    body.classList.add('rainy')
+    body.style.backgroundImage = `url(${Rainy})`
   } else if ( data.condition.includes('snow')) {
-    body.removeAttribute("class");
-    body.classList.add('snowy')
+    body.style.backgroundImage = `url(${Snowy})`
   } else if ( data.condition.includes('cloudy')) {
-    body.removeAttribute("class");
-    body.classList.add('cloudy')
+    body.style.backgroundImage = `url(${Cloudy})`
   }
 
   // name of city
