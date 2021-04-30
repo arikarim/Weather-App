@@ -1,4 +1,4 @@
-import {deleteEl, processData, errorhandle} from './logic'
+import { deleteEl, processData, errorhandle } from './logic';
 import './style.css';
 import Rainy from './img/rainy.jpg';
 import Snowy from './img/snowy.jpg';
@@ -12,7 +12,6 @@ const body = document.getElementById('body');
 const image = new Image();
 image.src = Rainy;
 body.style.backgroundImage = `url(${Rainy})`;
-
 
 function displayData(data) {
   deleteEl(contentDiv);
@@ -63,17 +62,14 @@ function displayData(data) {
   contentDiv.appendChild(div);
 }
 
-
-
 async function getData(location) {
   try {
     const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=59fc7f51da5e46f88ae184111212904&q=${location}`, { mode: 'cors' });
     const data = await response.json();
     const test = processData(data);
     displayData(test);
-
-  } catch{
-    errorhandle()
+  } catch {
+    errorhandle();
   }
 }
 

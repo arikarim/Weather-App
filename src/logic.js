@@ -26,16 +26,14 @@ function processData(weatherData) {
   return myData;
 }
 
-
 function errorhandle() {
-  deleteEl(contentDiv)
-  const errorMsg = document.createElement('div')
-  errorMsg.classList.add('text-light')
-  errorMsg.classList.add('fs-4')
+  deleteEl(contentDiv);
+  const errorMsg = document.createElement('div');
+  errorMsg.classList.add('text-light');
+  errorMsg.classList.add('fs-4');
 
-  errorMsg.textContent = 'Sorry we could not find your city'
-  contentDiv.appendChild(errorMsg)
+  errorMsg.textContent = 'Sorry we could not find your city';
+  contentDiv.appendChild(errorMsg);
 }
 
-
-export {deleteEl, processData, errorhandle}
+export { deleteEl, processData, errorhandle };
