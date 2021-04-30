@@ -87,7 +87,7 @@ function processData(weatherData) {
 }
 
 async function getData(location) {
-  const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=59fc7f51da5e46f88ae184111212904&q=${location}`, { mode: 'cors' });
+  const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=59fc7f51da5e46f88ae184111212904&q=${location}`, { mode: 'cors' });
   const data = await response.json();
   const test = processData(data);
   displayData(test);
