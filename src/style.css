@@ -2,6 +2,7 @@
 .rainy {
   line-height: normal;
   overflow-x: hidden;
+
   /* background-image: url(./img/rainy.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
