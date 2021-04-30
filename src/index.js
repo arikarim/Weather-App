@@ -87,10 +87,25 @@ function processData(weatherData) {
 }
 
 async function getData(location) {
-  const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=59fc7f51da5e46f88ae184111212904&q=${location}`, { mode: 'cors' });
-  const data = await response.json();
-  const test = processData(data);
-  displayData(test);
+  try {
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=59fc7f51da5e46f88ae184111212904&q=${location}`, { mode: 'cors' });
+    const data = await response.json();
+    const test = processData(data);
+    displayData(test);
+
+  } catch{
+    errorhandle()
+  }
+}
+
+function errorhandle() {
+  deleteEl(contentDiv)
+  const errorMsg = document.createElement('div')
+  errorMsg.classList.add('text-light')
+  errorMsg.classList.add('fs-4')
+
+  errorMsg.textContent = 'Sorry we could not find your city'
+  contentDiv.appendChild(errorMsg)
 }
 
 submit.addEventListener('click', (e) => {
