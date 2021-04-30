@@ -53,13 +53,28 @@ function displayData(data) {
   div2.classList.add('div2');
 
   div2.innerHTML = `
-  <p class="my-3 text-light">FEELS LIKE: ${data.feelsLike.c} C</p>
-  <p class="my-3 text-light">FEELS LIKE: ${data.feelsLike.f} F</p>
+  <div class='d-flex'>
+    <p id='feels-like' class="my-3 text-light">FEELS LIKE: ${data.feelsLike.c} C</p>
+    <button id='change-temp' class="my-3 change-temp">Change</button>
+  </div>
   <p class="my-3 text-light">WIND: ${data.wind} MPH</p>
-  <p class="my-3 text-light">HMIDITY: ${data.humidity}%</p>`;
-
+  <p class="my-3 text-light">HMIDITY: ${data.humidity}%</p>
+  `;
+  
   div.appendChild(div2);
   contentDiv.appendChild(div);
+    const feelsLike = document.getElementById('feels-like')
+    const change = document.getElementById('change-temp')
+    change.addEventListener('click', e => {
+      e.preventDefault();
+      if (temp.textContent == data.currentTemp.c) {
+        temp.textContent = data.currentTemp.f
+        feelsLike.innerHTML = `FEELS LIKE: ${data.feelsLike.f} F`
+      } else {
+        feelsLike.innerHTML = `FEELS LIKE: ${data.feelsLike.c} C`
+        temp.textContent = data.currentTemp.c
+      }
+    })
 }
 
 async function getData(location) {

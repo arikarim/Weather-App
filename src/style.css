@@ -39,3 +39,8 @@ form > label {
   margin-top: 69px;
   margin-left: 50px;
 }
+
+.change-temp {
+  opacity: 0.4;
+  border-radius: 25px;
+}
