@@ -27,8 +27,12 @@ To get this project up and running locally, you must follow the steps from the [
 **To get this project set up on your local machine, follow these simple steps:**
 
 **Step 1**<br>
-Navigate through the local folder where you want to clone the repository and run<br>
-git clone `https://github.com/arikarim/Weather-App/tree/main`. It will clone the repo to your local folder.<br>
+Navigate through the local folder where you want to clone the repository and run: <br>
+
+```
+git clone https://github.com/arikarim/Weather-App/tree/main 
+```
+It will clone the repo to your local folder.
 
 **Step 2**<br>
 - Cd inside the project
