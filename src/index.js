@@ -39,7 +39,7 @@ function displayData(data) {
 
   // Tempreature
   const div = document.createElement('div');
-  div.classList.add('d-flex');
+  div.classList.add('d-md-flex');
   div.classList.add('temp-div');
 
   const temp = document.createElement('span');
